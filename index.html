@@ -15,11 +15,11 @@
 </head>
 <body>
 
-    <!--  Pantalla de carga  -->
+    <!--  Pantalla de carga  (el contenido entre este comentario y el siguiente sera eliminado una vez la pagina cargue)  -->
 
     <div class="loader"></div><div class="loader-text"><p>Loading . . .</p></div>
     
-    <script>
+    <script class="script-loader">
         window.addEventListener("load", () => {
             document.querySelector(".loader").classList.add("loader--hidden");
             document.querySelector(".loader-text").classList.add("loader--hidden");
@@ -28,7 +28,9 @@
                 document.body.removeChild(document.querySelector(".loader"));
             });
             document.querySelector(".loader-text").addEventListener("transitionend", () => {
-                document.body.removeChild(document.querySelector(".loader"));
+                document.body.removeChild(document.querySelector(".loader-text"));
+                //remove script element
+                document.body.removeChild(document.querySelector(".script-loader"));
             });
         });
     </script>
@@ -79,11 +81,6 @@
     <footer>
         <p>gracias por leer</p>
     </footer>
-
-    <!--  Recursos externos  -->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
