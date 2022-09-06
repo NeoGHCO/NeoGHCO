@@ -9,11 +9,32 @@
     <meta name="author" content="Clark Obé Arellano">
     <meta name="robots" content="index">
     <title>NeoGHCO</title>
+    <link rel="stylesheet" type="text/css" href="src/css/loader.css">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/ghcologo.png">
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
 </head>
 <body>
+
+    <!--  Pantalla de carga  -->
+
+    <div class="loader"></div><div class="loader-text"><p>Loading . . .</p></div>
     
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+            document.querySelector(".loader-text").classList.add("loader--hidden");
+
+            document.querySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            });
+            document.querySelector(".loader-text").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            });
+        });
+    </script>
+    
+    <!--  Pagina  -->
+
     <header>
         <h1><img src="src/img/ghcologo.png">NeoGHCO</h1>
     </header>
