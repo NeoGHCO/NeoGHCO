@@ -75,6 +75,15 @@ h2
     letter-spacing: 2px;
 }
 
+h3
+{
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
 ul
 {
     padding: 0;
@@ -86,21 +95,15 @@ article
 {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 3%;
     border-radius: 25px;
     border: 1px solid rgba(f,f,f,0.5);
     background: rgba(255,255,255,0.5);
     transition: 0.5s;
-}
-
-ion-icon
-{
-    font-size: 5em;
-    align-self: center;
 }
 
 li
@@ -147,16 +150,23 @@ aside
         text-align: center;
     }
 
+    article
+    {
+        display: block;
+    }
+
     .container
     {
         display: block;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     section
     {
         display: block;
         margin: auto;
-        width: 80%;
+        width: 90%;
     }
 
     aside
@@ -165,6 +175,11 @@ aside
         margin: auto;
         margin-top: 5%;
         width: 80%;
+    }
+
+    .content
+    {
+        margin-bottom: 10px;
     }
 }
 
