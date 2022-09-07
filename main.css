@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*
+{
+    color: #434343;
+    transition: 0.5s;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    background: radial-gradient(ellipse at 100% 125%,#ff9b9b, #ffc4eb, #f9edff);
+}
+
+header
+{
+    border-radius: 25px;
+    width: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    font-size: 400%;
+    padding: 2%;
+    background: rgba(255,255,255,0.6);
+}
+
+h1
+{
+    width: 100%;
+    height: 100%;
+    font-size: 90%;
+    letter-spacing: 2px;
+    align-self: center;
+    text-shadow: 0px 10px 15px #ecc5ff;
+}
+
+img
+{
+    min-width: 45px;
+    width: 40%;
+}
+
+.container
+{
+    border-radius: 25px;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(255,255,255,0.3);
+}
+
+section
+{
+    border-radius: 25px;
+    display: block;
+    width: 60%;
+    padding: 3%;
+    background: rgba(255,255,255,0.3);
+}
+
+h2
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0px 10px 15px #ecc5ff;
+}
+
+h3
+{
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0px 10px 15px #ecc5ff;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+article
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3%;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.5);
+    transition: 0.5s;
+}
+
+.content
+{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(21,21,21,0.5);
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.content p
+{
+    color: white;
+    text-shadow: none;
+    font-size: 1.1rem;
+}
+
+aside
+{
+    border-radius: 25px;
+    display: block;
+    width: 20%;
+    padding: 3%;
+    background: rgba(255,255,255,0.6);
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    h1
+    {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    article
+    {
+        display: block;
+    }
+
+    .container
+    {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    section
+    {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    aside
+    {
+        display: block;
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+    .content
+    {
+        margin-bottom: 10px;
+    }
+}
+
+footer
+{
+    text-align: center;
+}
